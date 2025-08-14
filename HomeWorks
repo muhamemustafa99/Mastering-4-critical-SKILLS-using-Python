@@ -1,0 +1,30 @@
+print('practice', "makes perfect.")
+print("Childern must be taught\n how to think\n NOT\n what to think")
+print("\"\"")
+print('2*3*4*5/10=')
+print(2*3*4*5/10)
+
+print('*')
+print('* *')
+print('* * *')
+print('* * * *')
+print('* * * * *')
+
+print('        *')
+print('      * * *')
+print('    * * * * *')
+print('  * * * * * * *')
+print('* * * * * * * * *')
+print('  * * * * * * *')
+print('    * * * * *')
+print('      * * *')
+print('        *')
+
+print('HI')
+print()
+print("I am Mohamed")
+print(3*6)
+print("wonderful \" Day")
+print("wonderful Day")
+
+
