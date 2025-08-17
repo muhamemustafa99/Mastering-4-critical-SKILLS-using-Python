@@ -1,0 +1,13 @@
+# nb = int(input("Enter the number of Boys: "))
+# ng = int(input("Enter the number of Girls: "))
+# nt = int(input("Enter the number of Teachers: "))
+
+# print(bool(nb > 25))
+# print(bool(ng <= 30))
+# print(bool(nb > 20 and nt > 2 or ng > 30 and nt > 4))
+# print(bool(nb < 60 or ng < 70))
+# print(bool(not nb >= 60 and not ng >= 70)) #Not
+# print(bool(nb == ng+10))
+# print(bool(nb-ng > 10 or nt > 5))
+# print(bool(nb == ng+10 or ng == nb+15))
+#---------------------------------------------------------
