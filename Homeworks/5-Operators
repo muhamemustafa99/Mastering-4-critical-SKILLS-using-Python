@@ -1,4 +1,3 @@
-
 #05 Operators
 
 # nb = int(input("Enter the number of Boys: "))
@@ -37,14 +36,7 @@
 # print("The average of the first 3 numbers // The average of the last 2 numbers is: ", C)
 #===================================================================
 
-# Num1 = float(i# d3 = (last_3_digits // 100) % 10
-
-# sum_last_3 = d1 + d2 + d3
-
-# print("Last 3 digits:", last_3_digits)
-# print("Sum of last 3 digits:", sum_last_3)
-#===================================================================
-nput("Enter the 1st number: "))
+# Num1 = float(input("Enter the 1st number: "))
 # Num2 = float(input("Enter the 2st number: "))
 
 # result = Num1/Num2         ##result2= Num1//Num2
@@ -78,6 +70,13 @@ nput("Enter the 1st number: "))
 
 # d1 = last_3_digits % 10
 # d2 = (last_3_digits // 10) % 10
+# d3 = (last_3_digits // 100) % 10
+
+# sum_last_3 = d1 + d2 + d3
+
+# print("Last 3 digits:", last_3_digits)
+# print("Sum of last 3 digits:", sum_last_3)
+#===================================================================
 
 # Number = int(input("Enter a number: "))
 
@@ -97,15 +96,25 @@ nput("Enter the 1st number: "))
 # print(result)
 #===================================================================
 
-Number = int(input("Enter a number: "))
+# Number = int(input("Enter a number: "))
 
-years = Number // 360
-remainder_months = Number - (int(years)*360)
+# years = Number // 360
+# remainder_months = Number - (int(years)*360)
 
-months = remainder_months // 30
-remainder_days = remainder_months - (int(months)*30)
+# months = remainder_months // 30
+# remainder_days = remainder_months - (int(months)*30)
 
-days = remainder_days 
+# days = remainder_days 
 
-print(f"You are: {years} years,: {months} months, and: {days} days ")
+# print(f"You are: {years} years,: {months} months, and: {days} days ")
+
+################ with divmod()
+# Number = int(input("Enter a number: "))
+
+# years, remainder = divmod(Number, 360)
+# months, days = divmod(remainder, 30)
+
+# print(f"You are: {years} years, {months} months, and {days} days")
+
 #===================================================================
+
