@@ -96,17 +96,15 @@
 # print(result)
 #===================================================================
 
-# Number = int(input("Enter a number: "))
+Number = int(input("Enter a number: "))
 
-# years = Number // 360
-# remainder_months = Number - (int(years)*360)
+years = Number // 360
+remainder_days = Number % 360
 
-# months = remainder_months // 30
-# remainder_days = remainder_months - (int(months)*30)
+months = remainder_days // 30
+days   = remainder_days % 30
 
-# days = remainder_days 
-
-# print(f"You are: {years} years,: {months} months, and: {days} days ")
+print(f"You are: {years} years,: {months} months, and: {days} days ")
 
 ################ with divmod()
 # Number = int(input("Enter a number: "))
