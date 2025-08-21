@@ -1,1 +1,60 @@
+# Number = str(input("Enter a number: "))
 
+# len_number = len(Number)
+
+# if len_number == 1:                        #number < 10 == 1 digit
+#     print("just 1 digit")
+# elif len_number == 2:
+#     print("just 2 digits") 
+# elif len_number == 3:
+#     print("just 3 digits") 
+# elif len_number == 4:
+#     print("just 4 digits")  
+# else:
+#     print("4+ digits") 
+# print(Number)    
+#===================================================================
+
+# Num1 = float(input("Enter the 1st number: "))
+# operator = input("Enter the operator: ")
+# Num2 = float(input("Enter the 2st number: "))
+
+
+# if operator == '+':
+#     print(Num1 + Num2)
+# elif operator == '-':
+#     print(Num1 - Num2) 
+# elif operator == '*':
+#     print(Num1 * Num2) 
+# elif operator == '/' and Num2 != 0:
+#     print(Num1 / Num2)  
+# else :
+#     print("N/A")
+#===================================================================
+# Num1, Num2 = map(float,input("Enter 2 numbers: ").split())
+
+# if Num1 > Num2:
+#     print(f"{Num2} is the smaller")
+# else:
+#     print(f"{Num1} is the smaller")    
+#===================================================================
+
+# Num1, Num2, Num3 = map(float,input("Enter 3 numbers: ").split())
+
+# if Num1 < Num2 and Num1 < Num3 :
+#     print(f"{Num1} is the smallest")
+# elif Num2 < Num1 and Num2 < Num3:
+#     print(f"{Num2} is the smallest")
+# else:
+#     print(f"{Num3} is the smallest")
+
+###Another way         
+# Num1, Num2, Num3 = map(float,input("Enter 3 numbers: ").split())
+# ans = Num1
+
+# if ans > Num2:
+#     ans = Num2
+# if ans > Num3:
+#     ans = Num3
+# print (ans)        
+#===================================================================
