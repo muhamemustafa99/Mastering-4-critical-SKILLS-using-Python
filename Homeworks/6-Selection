@@ -2,7 +2,7 @@
 
 # len_number = len(Number)
 
-# if len_number == 1:                        #number < 10 == 1 digit
+# if len_number == 1:                        #number < 10
 #     print("just 1 digit")
 # elif len_number == 2:
 #     print("just 2 digits") 
@@ -91,3 +91,312 @@
 #         else:
 #             print("This is a bad number")    
 #===================================================================
+
+# Number1, Number2 = map(int,input("Enter a number: ").split())
+
+# if Number1 % 2 == 1 and Number2 % 2 == 1:
+#     print(Number1*Number2)
+# elif Number1 % 2 == 0 and Number2 % 2 == 0 and Number2 != 0:
+#     print(Number1 / Number2)    
+# elif Number1 % 2 == 1 and Number2 % 2 == 0:
+#     print(Number1 + Number2)    
+# else:
+#     print(Number1 - Number2)    
+#===================================================================
+
+# Number1, Number2, Number3 = map(int,input("Enter unordered 3 numbers: ").split())
+                    
+# if Number1 > Number2:
+#      Number1 , Number2 = Number2 , Number1        
+# if Number2 > Number3:
+#      Number2 , Number3 = Number3 , Number2     
+# if Number1 > Number2:
+#      Number1 , Number2 = Number2 , Number1
+
+# print(Number1,Number2,Number3)
+#===================================================================
+
+# Number1, Number2, Number3 = map(int,input("Enter unordered 3 numbers: ").split())
+
+# The_biggest = -1
+
+# if Number1 < 100:
+#     The_biggest = Number1
+# if Number2 < 100 and Number2 > The_biggest:
+#     The_biggest = Number2
+# if Number3 < 100 and Number3 > The_biggest:
+#     The_biggest = Number3
+
+# print("The biggest number under 100 is: ",The_biggest)
+#===================================================================
+
+# X = float(input("Enter a number: "))
+
+# Number1, Number2, Number3, Number4, Number5 = map(float,input("Enter 5 numbers: ").split())
+
+# values_greaterthan_or_equal_X = 0
+# values_lessthan_X = 0
+
+# if Number1 > X:
+#        values_greaterthan_or_equal_X += 1
+# elif Number1 < X:
+#     values_lessthan_X = 1
+
+# if Number2 > X:
+#        values_greaterthan_or_equal_X += 1
+# elif Number2 < X:
+#     values_lessthan_X += 1
+
+# if Number3 > X:
+#     values_greaterthan_or_equal_X =+ 1
+# elif Number3 < X:
+#     values_lessthan_X += 1
+
+# if Number4 > X:
+#        values_greaterthan_or_equal_X += 1
+# elif Number4 < X:
+#     values_lessthan_X += 1
+
+# if Number5 > X:
+#        values_greaterthan_or_equal_X += 1
+# elif Number5 < X:
+#     values_lessthan_X += 1
+
+# print(f"Values greater than the entered number are: {values_greaterthan_or_equal_X}")
+# print(f"Values less than the entered number are: {values_lessthan_X}")
+#===================================================================
+
+# Number1, Number2, Number3, Number4, Number5, Number6, Number7, Number8, Number9, Number10 = map(float,input("Enter 10 numbers: ").split())
+
+# The_biggest_value = Number1
+
+# if Number2 > The_biggest_value:
+#     The_biggest_value = Number2
+# if Number3 > The_biggest_value:
+#     The_biggest_value = Number3
+# if Number4 > The_biggest_value:
+#     The_biggest_value = Number4       
+# if Number5 > The_biggest_value:
+#     The_biggest_value = Number5
+# if Number6 > The_biggest_value:
+#     The_biggest_value = Number6
+# if Number7 > The_biggest_value:
+#     The_biggest_value = Number7
+# if Number8 > The_biggest_value:
+#     The_biggest_value = Number8
+# if Number9 > The_biggest_value:
+#     The_biggest_value = Number9
+# if Number10 > The_biggest_value:
+#     The_biggest_value = Number10
+
+# print("This is the biggests value:", The_biggest_value)    
+#===================================================================  
+
+# N = int(input("Enter a number between 1 and 10: "))
+
+# if 1 <= N <= 10:
+#     if N == 1:
+#         Number1 = float(input("Enter 1 number: "))
+#         The_biggest_value = Number1
+
+#     if N == 2:
+#         Number1, Number2 = map(float, input("Enter 2 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+
+#     if N == 3:
+#         Number1, Number2, Number3 = map(float, input("Enter 3 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+
+#     if N == 4:
+#         Number1, Number2, Number3, Number4 = map(float, input("Enter 4 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+
+#     if N == 5:
+#         Number1, Number2, Number3, Number4, Number5 = map(float, input("Enter 5 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+
+#     if N == 6:
+#         Number1, Number2, Number3, Number4, Number5, Number6 = map(float, input("Enter 6 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+#         if Number6 > The_biggest_value:
+#             The_biggest_value = Number6
+
+#     if N == 7:
+#         Number1, Number2, Number3, Number4, Number5, Number6, Number7 = map(float, input("Enter 7 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+#         if Number6 > The_biggest_value:
+#             The_biggest_value = Number6
+#         if Number7 > The_biggest_value:
+#             The_biggest_value = Number7
+
+#     if N == 8:
+#         Number1, Number2, Number3, Number4, Number5, Number6, Number7, Number8 = map(float, input("Enter 8 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+#         if Number6 > The_biggest_value:
+#             The_biggest_value = Number6
+#         if Number7 > The_biggest_value:
+#             The_biggest_value = Number7
+#         if Number8 > The_biggest_value:
+#             The_biggest_value = Number8
+
+#     if N == 9:
+#         Number1, Number2, Number3, Number4, Number5, Number6, Number7, Number8, Number9 = map(float, input("Enter 9 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+#         if Number6 > The_biggest_value:
+#             The_biggest_value = Number6
+#         if Number7 > The_biggest_value:
+#             The_biggest_value = Number7
+#         if Number8 > The_biggest_value:
+#             The_biggest_value = Number8
+#         if Number9 > The_biggest_value:
+#             The_biggest_value = Number9
+
+#     if N == 10:
+#         Number1, Number2, Number3, Number4, Number5, Number6, Number7, Number8, Number9, Number10 = map(float, input("Enter 10 numbers: ").split())
+#         The_biggest_value = Number1
+#         if Number2 > The_biggest_value:
+#             The_biggest_value = Number2
+#         if Number3 > The_biggest_value:
+#             The_biggest_value = Number3
+#         if Number4 > The_biggest_value:
+#             The_biggest_value = Number4
+#         if Number5 > The_biggest_value:
+#             The_biggest_value = Number5
+#         if Number6 > The_biggest_value:
+#             The_biggest_value = Number6
+#         if Number7 > The_biggest_value:
+#             The_biggest_value = Number7
+#         if Number8 > The_biggest_value:
+#             The_biggest_value = Number8
+#         if Number9 > The_biggest_value:
+#             The_biggest_value = Number9
+#         if Number10 > The_biggest_value:
+#             The_biggest_value = Number10
+
+#     print("This is the biggest value:", The_biggest_value)
+
+# else:
+#     print("Number out of range")
+
+
+#################### Another_Way
+
+# total_numbers = int(input("Enter how many numbers you want to compare (1:10): "))
+
+# if total_numbers < 1 or total_numbers > 10:
+#     print("Invalid! You must enter a number between 1 and 10.")
+# else:
+#     # هنعتبر ان أول رقم هو أول رقم وبعد كده هنقارنه بالباقي
+#     largest_number = float(input("Enter your first number: "))
+#     total_numbers -= 1   # قلل العدد المتبقي من الأرقام
+    
+#     # اقرأ الرقم الثاني (لو فيه أرقام متبقية)
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))    #current_number = الرقم الجديد اللي المستخدم بيدخله دلوقتي.
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     if total_numbers > 0:
+#         current_number = float(input("Enter next number: "))
+#         total_numbers -= 1
+#         if current_number > largest_number:
+#             largest_number = current_number
+
+#     print("The biggest value is:", largest_number)
+#===================================================================  
+
