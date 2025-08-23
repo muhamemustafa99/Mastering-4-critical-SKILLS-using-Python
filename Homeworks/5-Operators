@@ -1,4 +1,5 @@
-#05 Operators
+##################################  #05 Operators  ################################### 
+
 
 # nb = int(input("Enter the number of Boys: "))
 # ng = int(input("Enter the number of Girls: "))
@@ -96,15 +97,15 @@
 # print(result)
 #===================================================================
 
-Number = int(input("Enter a number: "))
+# Number = int(input("Enter a number: "))
 
-years = Number // 360
-remainder_days = Number % 360
+# years = Number // 360
+# remainder_days = Number % 360
 
-months = remainder_days // 30
-days   = remainder_days % 30
+# months = remainder_days // 30
+# days   = remainder_days % 30
 
-print(f"You are: {years} years,: {months} months, and: {days} days ")
+# print(f"You are: {years} years,: {months} months, and: {days} days ")
 
 ################ with divmod()
 # Number = int(input("Enter a number: "))
@@ -115,4 +116,4 @@ print(f"You are: {years} years,: {months} months, and: {days} days ")
 # print(f"You are: {years} years, {months} months, and {days} days")
 
 #===================================================================
-
+####################################################################
