@@ -1,4 +1,4 @@
-################# Day 1
+##################################  3-Printing  ################################### 
 
 # print('practice', "makes perfect.")
 # print("Childern must be taught\n how to think\n NOT\n what to think")
@@ -29,10 +29,7 @@
 # print("wonderful \" Day")
 # print("wonderful Day")
 
-
-
-
-################# Day 2
+#===================================================================
 
 # Name=input("Enter your name:\n")
 # Age=input("Enter your age:\n")
@@ -45,4 +42,4 @@
 # print("Your name is: " + input("Enter your name:\n"))
 # print("Your age is: " + input("Enter your age:\n"))
 # print("Your track is: " + input("Enter your track:\n"))
-##############################
+#===================================================================
