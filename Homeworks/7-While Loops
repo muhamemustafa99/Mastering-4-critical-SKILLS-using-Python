@@ -1,1 +1,67 @@
+##################################  7-While Loops  ################################### 
+
+# x = 1 
+# sum = 0
+
+# while x <= 5:
+#       sum += x 
+#       x += 1
+# print("The sum of the first 5 numbers is:", sum)
+#===================================================================  
+
+# end = int(input("Enter an number: "))
+# start = 1
+
+# while start <= end:
+#     if start % 3 == 0:
+#         print(start)
+#     start += 1
+#===================================================================  
+
+# Base = int(input("Enter a number: "))
+# Exponent = int(input("Enter a power: "))
+
+# python_result = Base ** Exponent
+
+# count = 1
+# power = 1
+
+# while count <= Exponent:
+#     power *= Base         
+#     count += 1
+# print(power)   
+
+# assert python_result == power, "False"
+
+############ Another way 
+
+# Base = int(input("Enter a number: "))
+# Exponent = int(input("Enter the power: "))
+
+# python_result = Base ** power
+
+# result = 1
+
+# while Exponent >= 1:
+#     result = result * Base
+#     Exponent -= 1 
+# print(result)    
+
+# assert python_result == result, "False"
+#===================================================================  
+
+# number = int(input("Enter a number: "))
+# original = number  
+
+
+# if number == 0:               #Case 0
+#       digits = 1
+# else:
+#       digits = 0
+#       number = abs(number)    #Case Negative
+#       while number > 0:    
+#             digits += 1 
+#             number //= 10
+# print(f"Number of digits for this number: {original} is --> {digits}")
+#===================================================================  
 
