@@ -54,7 +54,7 @@
 # original = number  
 
 
-# if number == 0:               #Case 0
+# if number == 0:         #Case 0
 #       digits = 1
 # else:
 #       digits = 0
@@ -64,4 +64,97 @@
 #             number //= 10
 # print(f"Number of digits for this number: {original} is --> {digits}")
 #===================================================================  
+
+# number_of_cases = int(input("How many cases: "))
+
+
+# if number_of_cases == 0:
+#     print("0 cases")
+# else:    
+#     number_of_cases = abs(number_of_cases)
+#     while number_of_cases > 0:
+#         end = int(input("You want to sum from 1 to "))
+#         original = end
+#         total = 0
+
+#         # Inner loop: sum from 1 to end 
+#         while end > 0:
+#             total += end
+#             end -= 1
+
+#         number_of_cases -= 1    
+#         print(f"The sum from 1 to {original} = {total}")
+#===================================================================  
+
+# number_of_rows = int(input("How many rows: "))
+
+# if number_of_rows == 0:
+#     print("0 rows")
+# else:
+#     number_of_rows = abs(number_of_rows)
+
+#     row = 1
+#     while row <= number_of_rows:
+#         star = 1
+#         while star <= row:
+#             print ('*', end='')
+#             star += 1
+#         print()
+#         row += 1
+#===================================================================    
+
+# start, end = map(int, input("Which number would you like to start and end on?: ").split())
+
+# while start <= end:
+#     print(start)
+#     start += 1
+#===================================================================  
+
+# number = int(input("Enter a number: "))
+# word = str(input("Enter a word: "))
+
+# while number:
+#     print(word, end='')
+#     number -= 1
+#===================================================================  
+
+# number_of_rows = int(input("How many rows: "))
+
+# if number_of_rows == 0:
+#     print("0 rows")
+# else:
+#     number_of_rows = abs(number_of_rows)
+
+#     row = 1
+#     while row <= number_of_rows:
+#         star = 5
+#         while star >= row:
+#             print ('*', end='')
+#             star -= 1
+#         print()
+#         row += 1
+#===================================================================  
+# number_count = int(input("How many numbers do you want to enter? "))
+
+# even_sum, even_count = 0, 0
+# odd_sum, odd_count = 0, 0
+
+# loop = 1
+# while loop <= number_count:
+#     entered_number = float(input(f"Enter number: "))
+
+#     if loop % 2 == 0:
+#      even_sum += entered_number
+#      even_count += 1
+
+#     else:
+#        odd_sum += entered_number
+#        odd_count += 1
+
+#     loop += 1   
+
+# print(f"The sum of even nums is: {even_sum} \nThe sum of odd nums is {odd_sum}")
+# print(f"The avg of even nums is: {even_sum / even_count} \nThe avg of odd nums is {odd_sum / odd_count}")
+#===================================================================  
+
 
