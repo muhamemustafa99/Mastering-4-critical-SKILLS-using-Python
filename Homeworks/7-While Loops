@@ -157,16 +157,16 @@
 # print(f"The avg of even nums is: {even_sum / even_count} \nThe avg of odd nums is {odd_sum / odd_count}")
 #===================================================================  
 
-while True:
+# My_way
+
+# while True:
 #     print("\n--- Menu ---")
 #     print("1: Sum the numbers from 1 to your input")
 #     print("2: Evaluate 2 numbers with an operation")
 #     print("3: End the program") 
 
 #     user_input = int(input("Choose a number from 1 to 3: "))
-
-#     # if user_input > 0 and user_input < 4:
-       
+      
 #     if user_input == 1:
 #         x = int(input("Enter a number: "))
 #         result = x * (x + 1) // 2
@@ -202,6 +202,51 @@ while True:
 #         break
 #     else:
 #         print("Invalid Input... Try again")      
-#===================================================================  
 
+# ------------------------------------------------------
 
+# M.S_way
+
+# while True:
+#     print("\n--- Menu ---")
+#     print("1: Sum the numbers from 1 to your input")
+#     print("2: Evaluate 2 numbers with an operation")
+#     print("3: End the program") 
+
+#     user_input = int(input("Choose a number from 1 to 3: "))
+
+#     if user_input != 1 and user_input != 2 and user_input != 3:
+#         print("Invalid number. Enter a number from 1 to 3")
+#         continue
+#     if user_input == 1:
+#         x = int(input("Enter a number: "))
+#         result = (x * (x + 1)) // 2
+#         print(f"sum from 1 to {x} is {result}")
+
+#     elif user_input == 2:
+#         number1, operation, number2 = map(int, input("Enter an expression: ").split())   
+#         number1, number2 = float(number1), float(number2)
+
+#         result = None
+
+#         if operation == "+":
+#             result = number1 + number2
+#         elif operation == "-":
+#             result = number1 - number2
+#         elif operation == "*":
+#             result = number1 * number2
+#         elif operation == "**":
+#             result = number1 ** number2
+#         else:
+#             if number2 == 0:
+#                 print("Error: Division by zero")
+#             elif operation == "/":
+#                  result = number1 / number2
+#             elif operation == "//":
+#                  result = number1 // number2
+#         if result != None:
+#             print(f"The expression value is: {result}")
+
+#     else:
+#          break
+#===================================================================
