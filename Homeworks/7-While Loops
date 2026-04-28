@@ -252,3 +252,54 @@
 #     else:
 #          break
 #===================================================================
+
+# HomeWork_3
+
+number_choosen_by_user = int (input("Enter a number: "))
+
+if number_choosen_by_user <= 0:
+    print("Enter a number above the 0")
+else:
+    row = 1
+     
+    ################ The upper part
+    while row <= number_choosen_by_user :
+
+        spaces = number_choosen_by_user - row
+        counter = 0
+        while counter < spaces:
+            print(" ", end="")
+            counter += 1 
+
+        stars = (row * 2) - 1
+        counter = 0
+        while counter < stars:
+            print("*", end="")
+            counter += 1
+
+        print()       
+
+        row += 1
+
+    ################ The lower part            
+    row = row -1
+    while row >= 1:
+
+        spaces = number_choosen_by_user - row
+        counter = 0 
+        while counter < spaces:
+            print(" ", end="")
+            counter += 1    
+
+        stars = (row * 2) -1
+        counter = 0
+        while counter < stars:
+            print("*", end="")
+            counter += 1
+
+        print()
+
+        row -= 1        
+
+
+
