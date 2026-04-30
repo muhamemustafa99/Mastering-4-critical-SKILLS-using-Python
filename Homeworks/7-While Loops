@@ -1,256 +1,256 @@
 ##################################  7-While Loops  ################################### 
 
-# x = 1 
-# sum = 0
+x = 1 
+sum = 0
 
-# while x <= 5:
-#       sum += x 
-#       x += 1
-# print("The sum of the first 5 numbers is:", sum)
-#===================================================================  
+while x <= 5:
+      sum += x 
+      x += 1
+print("The sum of the first 5 numbers is:", sum)
+===================================================================  
 
-# end = int(input("Enter an number: "))
-# start = 1
+end = int(input("Enter an number: "))
+start = 1
 
-# while start <= end:
-#     if start % 3 == 0:
-#         print(start)
-#     start += 1
-#===================================================================  
+while start <= end:
+    if start % 3 == 0:
+        print(start)
+    start += 1
+===================================================================  
 
-# Base = int(input("Enter a number: "))
-# Exponent = int(input("Enter a power: "))
+Base = int(input("Enter a number: "))
+Exponent = int(input("Enter a power: "))
 
-# python_result = Base ** Exponent
+python_result = Base ** Exponent
 
-# count = 1
-# power = 1
+count = 1
+power = 1
 
-# while count <= Exponent:
-#     power *= Base         
-#     count += 1
-# print(power)   
+while count <= Exponent:
+    power *= Base         
+    count += 1
+print(power)   
 
-# assert python_result == power, "False"
+assert python_result == power, "False"
 
-############ Another way 
+########### Another way 
 
-# Base = int(input("Enter a number: "))
-# Exponent = int(input("Enter the power: "))
+Base = int(input("Enter a number: "))
+Exponent = int(input("Enter the power: "))
 
-# python_result = Base ** power
+python_result = Base ** power
 
-# result = 1
+result = 1
 
-# while Exponent >= 1:
-#     result = result * Base
-#     Exponent -= 1 
-# print(result)    
+while Exponent >= 1:
+    result = result * Base
+    Exponent -= 1 
+print(result)    
 
-# assert python_result == result, "False"
-#===================================================================  
+assert python_result == result, "False"
+===================================================================  
 
-# number = int(input("Enter a number: "))
-# original = number  
-
-
-# if number == 0:         #Case 0
-#       digits = 1
-# else:
-#       digits = 0
-#       number = abs(number)    #Case Negative
-#       while number > 0:    
-#             digits += 1 
-#             number //= 10
-# print(f"Number of digits for this number: {original} is --> {digits}")
-#===================================================================  
-
-# number_of_cases = int(input("How many cases: "))
+number = int(input("Enter a number: "))
+original = number  
 
 
-# if number_of_cases == 0:
-#     print("0 cases")
-# else:    
-#     number_of_cases = abs(number_of_cases)
-#     while number_of_cases > 0:
-#         end = int(input("You want to sum from 1 to "))
-#         original = end
-#         total = 0
+if number == 0:         #Case 0
+      digits = 1
+else:
+      digits = 0
+      number = abs(number)    #Case Negative
+      while number > 0:    
+            digits += 1 
+            number //= 10
+print(f"Number of digits for this number: {original} is --> {digits}")
+===================================================================  
 
-#         # Inner loop: sum from 1 to end 
-#         while end > 0:
-#             total += end
-#             end -= 1
+number_of_cases = int(input("How many cases: "))
 
-#         number_of_cases -= 1    
-#         print(f"The sum from 1 to {original} = {total}")
-#===================================================================  
 
-# number_of_rows = int(input("How many rows: "))
+if number_of_cases == 0:
+    print("0 cases")
+else:    
+    number_of_cases = abs(number_of_cases)
+    while number_of_cases > 0:
+        end = int(input("You want to sum from 1 to "))
+        original = end
+        total = 0
 
-# if number_of_rows == 0:
-#     print("0 rows")
-# else:
-#     number_of_rows = abs(number_of_rows)
+        # Inner loop: sum from 1 to end 
+        while end > 0:
+            total += end
+            end -= 1
 
-#     row = 1
-#     while row <= number_of_rows:
-#         star = 1
-#         while star <= row:
-#             print ('*', end='')
-#             star += 1
-#         print()
-#         row += 1
-#===================================================================    
+        number_of_cases -= 1    
+        print(f"The sum from 1 to {original} = {total}")
+===================================================================  
 
-# start, end = map(int, input("Which number would you like to start and end on?: ").split())
+number_of_rows = int(input("How many rows: "))
 
-# while start <= end:
-#     print(start)
-#     start += 1
-#===================================================================  
+if number_of_rows == 0:
+    print("0 rows")
+else:
+    number_of_rows = abs(number_of_rows)
 
-# number = int(input("Enter a number: "))
-# word = str(input("Enter a word: "))
+    row = 1
+    while row <= number_of_rows:
+        star = 1
+        while star <= row:
+            print ('*', end='')
+            star += 1
+        print()
+        row += 1
+===================================================================    
 
-# while number:
-#     print(word, end='')
-#     number -= 1
-#===================================================================  
+start, end = map(int, input("Which number would you like to start and end on?: ").split())
 
-# number_of_rows = int(input("How many rows: "))
+while start <= end:
+    print(start)
+    start += 1
+===================================================================  
 
-# if number_of_rows == 0:
-#     print("0 rows")
-# else:
-#     number_of_rows = abs(number_of_rows)
+number = int(input("Enter a number: "))
+word = str(input("Enter a word: "))
 
-#     row = 1
-#     while row <= number_of_rows:
-#         star = 5
-#         while star >= row:
-#             print ('*', end='')
-#             star -= 1
-#         print()
-#         row += 1
-#===================================================================  
-# number_count = int(input("How many numbers do you want to enter? "))
+while number:
+    print(word, end='')
+    number -= 1
+===================================================================  
 
-# even_sum, even_count = 0, 0
-# odd_sum, odd_count = 0, 0
+number_of_rows = int(input("How many rows: "))
 
-# loop = 1
-# while loop <= number_count:
-#     entered_number = float(input(f"Enter number: "))
+if number_of_rows == 0:
+    print("0 rows")
+else:
+    number_of_rows = abs(number_of_rows)
 
-#     if loop % 2 == 0:
-#      even_sum += entered_number
-#      even_count += 1
+    row = 1
+    while row <= number_of_rows:
+        star = 5
+        while star >= row:
+            print ('*', end='')
+            star -= 1
+        print()
+        row += 1
+===================================================================  
+number_count = int(input("How many numbers do you want to enter? "))
 
-#     else:
-#        odd_sum += entered_number
-#        odd_count += 1
+even_sum, even_count = 0, 0
+odd_sum, odd_count = 0, 0
 
-#     loop += 1   
+loop = 1
+while loop <= number_count:
+    entered_number = float(input(f"Enter number: "))
 
-# print(f"The sum of even nums is: {even_sum} \nThe sum of odd nums is {odd_sum}")
-# print(f"The avg of even nums is: {even_sum / even_count} \nThe avg of odd nums is {odd_sum / odd_count}")
-#===================================================================  
+    if loop % 2 == 0:
+     even_sum += entered_number
+     even_count += 1
 
-# HomeWork_2
+    else:
+       odd_sum += entered_number
+       odd_count += 1
 
-# My_way
+    loop += 1   
 
-# while True:
-#     print("\n--- Menu ---")
-#     print("1: Sum the numbers from 1 to your input")
-#     print("2: Evaluate 2 numbers with an operation")
-#     print("3: End the program") 
+print(f"The sum of even nums is: {even_sum} \nThe sum of odd nums is {odd_sum}")
+print(f"The avg of even nums is: {even_sum / even_count} \nThe avg of odd nums is {odd_sum / odd_count}")
+===================================================================  
 
-#     user_input = int(input("Choose a number from 1 to 3: "))
+#### HomeWork_2
+
+My_way
+
+while True:
+    print("\n--- Menu ---")
+    print("1: Sum the numbers from 1 to your input")
+    print("2: Evaluate 2 numbers with an operation")
+    print("3: End the program") 
+
+    user_input = int(input("Choose a number from 1 to 3: "))
       
-#     if user_input == 1:
-#         x = int(input("Enter a number: "))
-#         result = x * (x + 1) // 2
-#         print(f"sum from 1 to {x} is {result}")
+    if user_input == 1:
+        x = int(input("Enter a number: "))
+        result = x * (x + 1) // 2
+        print(f"sum from 1 to {x} is {result}")
 
-#     elif user_input == 2:
-#         number1, number2 = map(int, input("Enter 2 numbers: ").split())   
-#         operation = input("Enter an operation (+, -, *, //, **): ")
-#         if operation == "+":
-#             print(number1 + number2)
-#         elif operation == "-":
-#             print(number1 - number2)
-#         elif operation == "*":
-#             print(number1 * number2)
-#         elif operation == "//":
-#             if number2 != 0:
-#                 print(number1 // number2)
-#             else:
-#                 print("Error: Division by zero")
-#         elif operation == "**":
-#             result = 1
-#             count = 0
-#             while count < number2 :
-#                 result *= number1
-#                 count += 1    
-#             print(f"{number1} ** {number2} = {result}")
+    elif user_input == 2:
+        number1, number2 = map(int, input("Enter 2 numbers: ").split())   
+        operation = input("Enter an operation (+, -, *, //, **): ")
+        if operation == "+":
+            print(number1 + number2)
+        elif operation == "-":
+            print(number1 - number2)
+        elif operation == "*":
+            print(number1 * number2)
+        elif operation == "//":
+            if number2 != 0:
+                print(number1 // number2)
+            else:
+                print("Error: Division by zero")
+        elif operation == "**":
+            result = 1
+            count = 0
+            while count < number2 :
+                result *= number1
+                count += 1    
+            print(f"{number1} ** {number2} = {result}")
 
-#         else:
-#             print("Invalid operation")       
+        else:
+            print("Invalid operation")       
 
-#     elif user_input == 3:
-#         print("Exiting program...")
-#         break
-#     else:
-#         print("Invalid Input... Try again")      
+    elif user_input == 3:
+        print("Exiting program...")
+        break
+    else:
+        print("Invalid Input... Try again")      
 
-# ------------------------------------------------------
+------------------------------------------------------
 
-# M.S_way
+#### M.S_way
 
-# while True:
-#     print("\n--- Menu ---")
-#     print("1: Sum the numbers from 1 to your input")
-#     print("2: Evaluate 2 numbers with an operation")
-#     print("3: End the program") 
+while True:
+    print("\n--- Menu ---")
+    print("1: Sum the numbers from 1 to your input")
+    print("2: Evaluate 2 numbers with an operation")
+    print("3: End the program") 
 
-#     user_input = int(input("Choose a number from 1 to 3: "))
+    user_input = int(input("Choose a number from 1 to 3: "))
 
-#     if user_input != 1 and user_input != 2 and user_input != 3:
-#         print("Invalid number. Enter a number from 1 to 3")
-#         continue
-#     if user_input == 1:
-#         x = int(input("Enter a number: "))
-#         result = (x * (x + 1)) // 2
-#         print(f"sum from 1 to {x} is {result}")
+    if user_input != 1 and user_input != 2 and user_input != 3:
+        print("Invalid number. Enter a number from 1 to 3")
+        continue
+    if user_input == 1:
+        x = int(input("Enter a number: "))
+        result = (x * (x + 1)) // 2
+        print(f"sum from 1 to {x} is {result}")
 
-#     elif user_input == 2:
-#         number1, operation, number2 = map(int, input("Enter an expression: ").split())   
-#         number1, number2 = float(number1), float(number2)
+    elif user_input == 2:
+        number1, operation, number2 = map(int, input("Enter an expression: ").split())   
+        number1, number2 = float(number1), float(number2)
 
-#         result = None
+        result = None
 
-#         if operation == "+":
-#             result = number1 + number2
-#         elif operation == "-":
-#             result = number1 - number2
-#         elif operation == "*":
-#             result = number1 * number2
-#         elif operation == "**":
-#             result = number1 ** number2
-#         else:
-#             if number2 == 0:
-#                 print("Error: Division by zero")
-#             elif operation == "/":
-#                  result = number1 / number2
-#             elif operation == "//":
-#                  result = number1 // number2
-#         if result != None:
-#             print(f"The expression value is: {result}")
+        if operation == "+":
+            result = number1 + number2
+        elif operation == "-":
+            result = number1 - number2
+        elif operation == "*":
+            result = number1 * number2
+        elif operation == "**":
+            result = number1 ** number2
+        else:
+            if number2 == 0:
+                print("Error: Division by zero")
+            elif operation == "/":
+                 result = number1 / number2
+            elif operation == "//":
+                 result = number1 // number2
+        if result != None:
+            print(f"The expression value is: {result}")
 
-#     else:
-#          break
+    else:
+         break
 #===================================================================
 
 # HomeWork_3
@@ -299,7 +299,69 @@ else:
 
         print()
 
-        row -= 1        
+        row -= 1   
+
+##### MS way
+
+
+"""
+Let's print the upper triangle first
+Let's assume N = 4, how many spaces and starts we print
+Row 1	Spaces 3	Stars 1
+Row 2	Spaces 2	Stars 3
+Row 3	Spaces 1	Stars 5
+Row 4	Spaces 0	Stars 7
+
+Now we wanna develop formulas for number of spaces and number of starts
+For a given 'row'
+Spaces are: N - rows   	(3, 2, 1, 0)
+Starts are: 2*row -1	(1, 3, 5, 7)
+
+Now we just iterate for each row
+print spaces
+then print starts
+"""
+
+
+n = int(input())
+
+
+row = 1
+while row <= n:
+    # Print N - rows spaces
+    spaces_count = 1
+    while spaces_count <= n - row:
+        print(' ', end='')
+        spaces_count += 1
+
+    # Print 2*rows-1 spaces
+    stars_count = 1
+    while stars_count <= 2 * row-1:
+        print('*', end='')
+        stars_count += 1
+
+    print()
+    row += 1
+
+
+row = n
+while row > 0:
+    # Print N - rows spaces
+    spaces_count = 1
+    while spaces_count <= n - row:
+        print(' ', end='')
+        spaces_count += 1
+
+    # Print 2*rows-1 spaces
+    stars_count = 1
+    while stars_count <= 2 * row-1:
+        print('*', end='')
+        stars_count += 1
+
+    print()
+    row -= 1
+
+
 
 
 
