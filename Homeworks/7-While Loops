@@ -400,7 +400,6 @@ while cnt <= n:
 ==========================================================================================================================
 # HomeWork_4
 
-
 T_Cases = int(input("Enter a number of T_Cases: "))
 
 if T_Cases < 0:
@@ -413,24 +412,74 @@ else:
         #ٌLoop for number of integers the user enters 
         number_of_integers = int (input("Enter a number of integers: "))
 
-        min = 0  
+        minimum  = 0  
         while number_of_integers > 0:
 
             entered_number = int (input("Enter the number: "))
-            if min == 0:
+            if minimum  == 0:
                 min=entered_number
 
             #comparing the minimum
-            if entered_number < min:
-                min = entered_number
+            if entered_number < minimum :
+                minimum  = entered_number
 
 
             number_of_integers -= 1        
         T_Cases -= 1
 
-        print("The min number is : ",min)
+        print("The min number is : ",minimum)
 
+################ M_S Way 
 
+# Read how many test cases we have
+total_test_cases = int(input("Enter the number of test cases: "))
 
+# Process each test case separately
+while total_test_cases > 0:
 
+    # Read how many integers belong to this test case
+    total_numbers = int(input("How many numbers will you enter? "))
 
+    # This variable tells us which number we are currently reading
+    current_position = 0
+
+    # This variable will store the minimum value found so far
+    minimum_value = 0
+
+    # Read all numbers for the current test case
+    while current_position < total_numbers:
+
+        # Read one number from the user
+        current_number = int(input("Enter a number: "))
+
+        # -----------------------------------------------------
+        # IMPORTANT:
+        # When we read the FIRST number,
+        # we have nothing to compare it with.
+        #
+        # Therefore, we assume that the first number
+        # is the minimum temporarily.
+        # -----------------------------------------------------
+        if current_position == 0:
+            minimum_value = current_number
+
+        # -----------------------------------------------------
+        # For every other number,
+        # compare it with the current minimum.
+        #
+        # If the new number is smaller,
+        # replace the current minimum.
+        # -----------------------------------------------------
+        elif current_number < minimum_value:
+            minimum_value = current_number
+
+        # Move to the next position
+        current_position += 1
+
+    # After reading all numbers,
+    # print the minimum for this test case
+    print("Minimum value =", minimum_value)
+
+    # Move to the next test case
+    total_test_cases -= 1
+==========================================================================================================================
