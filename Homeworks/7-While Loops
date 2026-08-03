@@ -429,7 +429,7 @@ else:
 
         print("The min number is : ",minimum)
 
-################ M_S Way 
+############M_S Way 
 
 # Read how many test cases we have
 total_test_cases = int(input("Enter the number of test cases: "))
@@ -452,24 +452,17 @@ while total_test_cases > 0:
         # Read one number from the user
         current_number = int(input("Enter a number: "))
 
-        # -----------------------------------------------------
-        # IMPORTANT:
         # When we read the FIRST number,
         # we have nothing to compare it with.
-        #
         # Therefore, we assume that the first number
         # is the minimum temporarily.
-        # -----------------------------------------------------
         if current_position == 0:
             minimum_value = current_number
 
-        # -----------------------------------------------------
         # For every other number,
         # compare it with the current minimum.
-        #
         # If the new number is smaller,
         # replace the current minimum.
-        # -----------------------------------------------------
         elif current_number < minimum_value:
             minimum_value = current_number
 
@@ -482,4 +475,5 @@ while total_test_cases > 0:
 
     # Move to the next test case
     total_test_cases -= 1
-==========================================================================================================================
+
+==================================================================================================================
