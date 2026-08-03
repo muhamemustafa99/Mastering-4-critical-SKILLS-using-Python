@@ -398,6 +398,37 @@ while cnt <= n:
 
     cnt += 1
 ==========================================================================================================================
+# HomeWork_4
+
+
+T_Cases = int(input("Enter a number of T_Cases: "))
+
+if T_Cases < 0:
+    print("Enter a valid number: ")
+
+else:
+#ٌLoop for num of test_cases 
+    while T_Cases > 0:
+
+        #ٌLoop for number of integers the user enters 
+        number_of_integers = int (input("Enter a number of integers: "))
+
+        min = 0  
+        while number_of_integers > 0:
+
+            entered_number = int (input("Enter the number: "))
+            if min == 0:
+                min=entered_number
+
+            #comparing the minimum
+            if entered_number < min:
+                min = entered_number
+
+
+            number_of_integers -= 1        
+        T_Cases -= 1
+
+        print("The min number is : ",min)
 
 
 
