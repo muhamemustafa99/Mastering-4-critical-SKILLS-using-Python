@@ -477,3 +477,28 @@ while total_test_cases > 0:
     total_test_cases -= 1
 
 ==================================================================================================================
+# 88 HomeWork_1
+
+# Read how many words 
+total_words = int(input("Enter the number of words: "))
+
+if total_words < 1:
+    print("Print a number above the 0")
+
+else:
+# Process each test case separately
+    while total_words > 0:
+
+        entered_word = str(input("Enter a word: "))
+
+        if len(entered_word) == 2:
+
+            if(("N" in entered_word) or ("n" in entered_word)) and \
+            (("O" in entered_word) or ("o" in entered_word)):
+                print("Match: ",entered_word)
+            else:
+                print("The word does not contain the letters 'N''O'.")
+        else:
+            print(entered_word," > 2 letters ")
+                    
+        total_words -= 1
