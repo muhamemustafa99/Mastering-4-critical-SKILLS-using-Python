@@ -486,11 +486,10 @@ if total_words < 1:
     print("Print a number above the 0")
 
 else:
-# Process each test case separately
     while total_words > 0:
 
         entered_word = str(input("Enter a word: "))
-
+        # The mord mus be 2 letters
         if len(entered_word) == 2:
 
             if(("N" in entered_word) or ("n" in entered_word)) and \
