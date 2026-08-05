@@ -498,6 +498,6 @@ else:
             else:
                 print("The word does not contain the letters 'N''O'.")
         else:
-            print(entered_word," > 2 letters ")
+            print(entered_word," != 2 letters ")
                     
         total_words -= 1
