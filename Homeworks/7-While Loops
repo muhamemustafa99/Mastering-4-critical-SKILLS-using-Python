@@ -501,3 +501,52 @@ else:
             print(entered_word," != 2 letters ")
                     
         total_words -= 1
+==================================================================================================================
+
+# 88 HomeWork_2
+
+number = int(input("Enter a number: "))   
+original = number 
+reverse = 0
+
+while number % 10 > 0:     # waht if 120 ? 120%10 = 0 ----> so false !
+
+    reverse = (reverse * 10) + (number % 10)     
+
+    number //= 10    # Remove the last digit from the current number
+
+print ("The reverse number of ",original," is ",reverse," and * 3 = ",reverse * 3)
+
+
+
+############M_S Way 
+
+# Read the number
+number = int(input("Enter a number: "))
+
+# This variable stores the reversed number as we build it
+reversed_number = 0
+
+# Continue until there are no digits left
+while number > 0:
+
+    # Extract the last digit
+    last_digit = number % 10
+
+    # Remove the last digit from the remaining number
+    number //= 10
+
+    # Shift the reversed number left and append the extracted digit
+    reversed_number = (reversed_number * 10) + last_digit
+
+print("Reversed Number :", reversed_number)
+print("Reversed × 3    :", reversed_number * 3)
+
+# 1. What am I extracting?    last_digit = remaining_number % 10
+
+# 2. What am I consuming?     remaining_number //= 10
+
+# 3. What am I building?      reversed_number = (reversed_number * 10) + last_digit
+==================================================================================================================
+
+
