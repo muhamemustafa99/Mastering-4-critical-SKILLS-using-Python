@@ -548,5 +548,45 @@ print("Reversed × 3    :", reversed_number * 3)
 
 # 3. What am I building?      reversed_number = (reversed_number * 10) + last_digit
 ==================================================================================================================
+# 88 HomeWork_3
 
+first_num = int(input("Enter the 1st num: "))
+second_num = int(input("Enter the 2nd num: "))
+total_lines = first_num * second_num     
+loop = 1                       
+line_num = 1
+begin = 1
+test = second_num
+
+while loop <= total_lines:              
+    result = begin * line_num
+    print(begin," * ", line_num, " = ", result)
+    line_num += 1
+    if line_num > test:
+        line_num = 1
+        begin += 1
+
+    loop += 1
+
+############M_S Way 
+first_num = int(input())
+second_num = int(input())
+
+current_first = 1
+
+# first col loop
+while current_first <= first_num:
+
+    current_second = 1
+
+        # second col loop
+    while current_second <= second_num:
+
+        result = current_first * current_second
+
+        print(current_first, "*", current_second, "=", result)
+
+        current_second += 1
+
+    current_first += 1
 
