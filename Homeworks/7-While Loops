@@ -589,3 +589,35 @@ while current_row <= number_of_rows:
         current_column += 1
 
     current_row += 1
+
+==================================================================================================================
+# 88 HomeWork_4 (Special_Sum)
+
+t_cases = int(input("How many test cases: "))
+
+while t_cases > 0:
+
+    count_numbers = int(input("How many numbers: "))
+    index = 1
+    added = 0
+
+    while count_numbers > 0:
+
+        intered_nums = int(input("Enter the numbers: "))
+        exponent = index
+        result = 1
+
+        while exponent > 0:
+
+            result  = intered_nums * result
+            exponent -= 1
+            
+        index += 1
+        
+        print (result)
+        added += result
+
+        count_numbers -= 1
+    t_cases -= 1
+    print("Sum is: ", added,"\n")
+
