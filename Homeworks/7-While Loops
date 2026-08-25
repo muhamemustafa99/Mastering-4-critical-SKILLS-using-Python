@@ -568,7 +568,7 @@ while loop <= total_lines:
 
     loop += 1
 
-############M_S Way 
+############ M_S Way 
 number_of_rows = int(input())
 number_of_columns = int(input())
 
@@ -621,3 +621,26 @@ while t_cases > 0:
 
     print("Sum is: ", total_sum,"\n")
     t_cases -= 1
+
+############ M_S Way 
+test_cases = int(input("How many test cases: "))
+
+while test_cases > 0:
+
+    numbers_remaining = int(input("How many numbers: "))
+    current_index, total_sum = 1, 0
+
+    while current_index <= numbers_remaining:
+
+        current_number = int(input("Enter the numbers: "))
+        exponent_remaining, power_result = current_index, 1
+
+        while exponent_remaining > 0:
+            power_result *= current_number
+            exponent_remaining -= 1
+
+        total_sum += power_result
+        current_index += 1
+
+    print("Sum is", total_sum)
+    test_cases -= 1
