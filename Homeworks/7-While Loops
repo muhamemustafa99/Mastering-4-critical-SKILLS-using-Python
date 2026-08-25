@@ -595,29 +595,29 @@ while current_row <= number_of_rows:
 
 t_cases = int(input("How many test cases: "))
 
+# 1. loop over test cases
 while t_cases > 0:
 
-    count_numbers = int(input("How many numbers: "))
+    numbers_remaining = int(input("How many numbers: "))
     index = 1
-    added = 0
+    total_sum = 0
 
-    while count_numbers > 0:
+# 2. loop over reading numbers
+    while numbers_remaining > 0:
 
-        intered_nums = int(input("Enter the numbers: "))
+        current_number = int(input("Enter the numbers: "))
         exponent = index
         result = 1
-
+# 3. loop to repeat the current number
         while exponent > 0:
 
-            result  = intered_nums * result
+            result  = current_number * result
             exponent -= 1
             
-        index += 1
+        index += 1       
+        total_sum += result
         
-        print (result)
-        added += result
+        numbers_remaining -= 1
 
-        count_numbers -= 1
+    print("Sum is: ", total_sum,"\n")
     t_cases -= 1
-    print("Sum is: ", added,"\n")
-
