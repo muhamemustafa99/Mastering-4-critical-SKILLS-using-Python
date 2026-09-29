@@ -1,0 +1,119 @@
+#################################  #05 Operators  ################################### 
+
+
+nb = int(input("Enter the number of Boys: "))
+ng = int(input("Enter the number of Girls: "))
+nt = int(input("Enter the number of Teachers: "))
+
+print(bool(nb > 25))
+print(bool(ng <= 30))
+print(bool(nb > 20 and nt > 2 or ng > 30 and nt > 4))
+print(bool(nb < 60 or ng < 70))
+print(bool(not nb >= 60 and not ng >= 70)) #Not
+print(bool(nb == ng+10))
+print(bool(nb-ng > 10 or nt > 5))
+print(bool(nb == ng+10 or ng == nb+15))
+===================================================================
+
+Number1 = float(input("Enter the 1st number: "))
+Number2 = float(input("Enter the 2st number: "))
+Number3 = float(input("Enter the 3st number: "))
+Number4 = float(input("Enter the 4st number: "))
+Number5 = float(input("Enter the 5st number: "))
+
+#A
+Numbers_Avg = (Number1+Number2+Number3+Number4+Number5)/5.0
+
+#B
+Sum_123 = Number1+Number2+Number3
+Sum_45 = Number4+Number5
+B = Sum_123 / Sum_45
+
+#C
+C= (Sum_123/3.0) / (Sum_45/2.0)
+
+print("The average of the 5 numbers is: ", Numbers_Avg )
+print("The sum of the first 3 numbers // The sum of the last 2 numbers is : ", B)
+print("The average of the first 3 numbers // The average of the last 2 numbers is: ", C)
+===================================================================
+
+Num1 = float(input("Enter the 1st number: "))
+Num2 = float(input("Enter the 2st number: "))
+
+result = Num1/Num2         ##result2= Num1//Num2
+fraction = result - int(result)
+
+print(f"The fraction is: {fraction}")
+===================================================================
+
+import math
+
+Num1, Num2 = map(int, input("Enter the 1st and 2nd number: ").split())
+
+remainder = Num1 - Num2 * math.floor(Num1 / Num2)
+                         #Take the correct number before the comma
+                         #ممكن كمان استخدم remainder= Num1-(Num1 // Num2) * Num2
+print("The Remainder: ", remainder)
+===================================================================
+
+Number = int(input("Enter a number: "))
+
+is_even1 = Number % 2 == 0  
+is_even2 = Number / 2 == Number // 2
+is_even3 = (Number % 10) % 2  == 0    #استخدام اخر رقم (الاحاد)
+
+print(f"is_even1 = {is_even1}\nis_even2 = {is_even2}\nis_even3 = {is_even3}")
+===================================================================
+
+Number = int(input("Enter a number: "))
+
+last_3_digits = Number % 1000
+
+d1 = last_3_digits % 10
+d2 = (last_3_digits // 10) % 10
+d3 = (last_3_digits // 100) % 10
+
+sum_last_3 = d1 + d2 + d3
+
+print("Last 3 digits:", last_3_digits)
+print("Sum of last 3 digits:", sum_last_3)
+===================================================================
+
+Number = int(input("Enter a number: "))
+
+result = Number // 1000     #3 digits from the right are deleted
+last_digit = result % 10    #get the 4th digit
+
+print (last_digit)
+===================================================================
+
+Number = int(input("Enter a number: "))
+
+even_number = Number % 2 == 0 
+odd_number = Number % 2 == 1
+
+result = even_number * 100 + odd_number * 7
+
+print(result)
+===================================================================
+
+Number = int(input("Enter a number: "))
+
+years = Number // 360
+remainder_days = Number % 360
+
+months = remainder_days // 30
+days   = remainder_days % 30
+
+print(f"You are: {years} years,: {months} months, and: {days} days ")
+
+############### with divmod()
+Number = int(input("Enter a number: "))
+
+years, remainder = divmod(Number, 360)
+months, days = divmod(remainder, 30)
+
+print(f"You are: {years} years, {months} months, and {days} days")
+
+===================================================================
+###################################################################
