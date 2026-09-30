@@ -13,4 +13,14 @@ for case in range(test_cases):
         print(result)                   
         total_sum += result             
     print("Sum is: ", total_sum,"\n")        
-  #=============================================================================================
+#=============================================================================================
+first_range, sec_range, added = map(int, input("Enter 3 numbers: ").split())
+
+counter = 0
+
+for fnumber in range(1, first_range + 1):
+    for snumber in range(1, sec_range + 1):
+        if fnumber + snumber == added:
+            counter += 1
+print(counter)         
+#=============================================================================================
