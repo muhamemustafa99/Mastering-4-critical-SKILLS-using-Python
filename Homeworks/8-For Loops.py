@@ -18,8 +18,8 @@ first_range, sec_range, added = map(int, input("Enter 3 numbers: ").split())
 
 counter = 0
 
-for fnumber in range(1, first_range + 1):
-    for snumber in range(1, sec_range + 1):
+for fnumber in range(1, first_range + 1):   # if we changed the start from 1 to 0, then the same number will be added twice
+    for snumber in range(1, sec_range + 1):     # in our example, 70 will be added to the 0 twice 
         if fnumber + snumber == added:
             counter += 1
 print(counter)         
