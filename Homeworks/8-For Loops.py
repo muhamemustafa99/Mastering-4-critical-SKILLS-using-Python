@@ -15,12 +15,24 @@ for case in range(test_cases):
     print("Sum is: ", total_sum,"\n")        
 #=============================================================================================
 first_range, sec_range, added = map(int, input("Enter 3 numbers: ").split())
-
 counter = 0
 
-for fnumber in range(1, first_range + 1):   # if we changed the start from 1 to 0, then the same number will be added twice
-    for snumber in range(1, sec_range + 1):     # in our example, 70 will be added to the 0 twice 
+for fnumber in range(1, first_range + 1):
+    for snumber in range(1, sec_range + 1):
         if fnumber + snumber == added:
             counter += 1
-print(counter)         
+print(counter)
+
+
+#O(n) instead of O(n×m)
+
+
+first_range, sec_range, added = map(int, input("Enter 3 numbers: ").split())
+counter = 0
+
+for fnumber in range(1, first_range + 1):
+    snumber = added - fnumber
+    if 1 <= snumber <= sec_range:
+        counter += 1
+print(counter)       
 #=============================================================================================
