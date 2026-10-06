@@ -59,3 +59,15 @@ else:
 print(counter)
 
 #=============================================================================================
+#Triple of Numbers 
+first_range, sec_range, third_range = map(int, input("Enter 3 numbers: ").split())
+counter = 0
+
+for fnumber in range(1, first_range + 1):
+    for snumber in range(fnumber, sec_range + 1):
+        for thnumber in range(1, third_range + 1):
+
+            if fnumber + snumber <= thnumber:
+                counter += 1
+print(counter)
+
