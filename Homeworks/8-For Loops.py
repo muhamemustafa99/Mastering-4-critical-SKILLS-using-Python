@@ -59,7 +59,7 @@ else:
 print(counter)
 
 #=============================================================================================
-#Triple of Numbers 
+#Triple of Numbers  (O(n³))
 first_range, sec_range, third_range = map(int, input("Enter 3 numbers: ").split())
 counter = 0
 
@@ -70,4 +70,29 @@ for fnumber in range(1, first_range + 1):
             if fnumber + snumber <= thnumber:
                 counter += 1
 print(counter)
+
+#Only 2 Loops  (O(n²))
+
+first_range, sec_range, third_range = map(int, input("Enter 3 numbers: ").split())
+counter = 0
+
+for fnumber in range(1, first_range + 1):
+    for snumber in range(fnumber, sec_range + 1):
+
+        #thnumber(min) ​= fnumber + snumber
+        thnumber = fnumber + snumber
+#After calculating the sum of the two numbers, I assign it to `thnumber`,
+# then I'll check right away whether this number is within the available range or not
+        if 1 <= thnumber <= third_range:
+            print(thnumber)
+#Idea: When we find a pair (fnumber, snumber) with a sum of thnumber, 
+# this means that thnumber is the smallest possible sum for that pair. 
+# And since the total sum (the pair + the third number) 
+# must fall within the range third_range, 
+# the third number can take any value from 1 up to (third_range - thnumber).
+# So the number of such values is (third_range - thnumber + 1).
+            counter += third_range - thnumber + 1
+            
+print(counter)
+#=============================================================================================
 
