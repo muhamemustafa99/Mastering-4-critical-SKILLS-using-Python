@@ -99,21 +99,66 @@ print(counter)
 # Printing ********
 
 
+rows = int(input("How many rows: "))
 
+while rows % 2 == 0:
+    rows = int(input("How many rows: "))
+    print("Enter Odd number")
+    continue
+else:
+    for row in range(rows):
+# Find the middle row.
+        if row == rows // 2:
+# The number of spaces before the star equals the row index.
+            print(" " * row + "*")
+        else:
+# Calculate how far the current row is from the middle
+            distance_from_middle = abs(row - (rows // 2)) 
 
+#  Calculate the spaces before the first star
+# Formula: middle - distance_from_middle
+            spaces_before = (rows // 2) - distance_from_middle
+# Calculate the spaces between the two stars
+# The farther the row is from the middle, the more space there is between the stars.
+            spaces_middle = 2 * distance_from_middle - 1
 
+# Print the row in this order:
+        # 1. Spaces before the first star.
+        # 2. The first star.
+        # 3. Spaces between the stars.
+        # 4. The second star.
+            print(" " * spaces_before + "*" + " " * spaces_middle + "*")
+            
+# إزاي تفكر في مسائل من النوع ده؟
+# الخطوة 1: ارسم الشكل النهائي على ورقة
+# اكتب الـ output اللي إنت عايزه بالظبط. ده هيساعدك تشوف النمط.
 
+# الخطوة 2: حدد "الصف" و "العمود"
+# في المسائل اللي فيها رسم:
+# الصف = الصف الأفقي
+# العمود = المكان في الصف
 
+# الخطوة 3: ابحث عن العلاقة بين رقم الصف والمكان
+# الصف الأول → النجمة فين؟
+# الصف التاني → النجمة فين؟
+# وهكذا...
 
+# الخطوة 4: استخدم "البعد عن النص"
+# كتير من الأشكال المتماثلة بتتعامل مع البعد عن النص. استخدم abs عشان تحسبها.
 
+# الخطوة 5: قسّم الشكل لأجزاء
+# مسافات قبل
+# نجمة
+# مسافات بين
+# نجمة
+# مسافات بعد
 
+# الخطوة 6: اكتب معادلة لكل جزء
+# spaces_before = ?
+# spaces_middle = ?
 
-
-
-
-
-
-
+# الخطوة 7: اختبر المعادلة يدوياً
+# جربها على صف من الأول، صف من النص، صف من الآخر
 
 #=============================================================================================
 
