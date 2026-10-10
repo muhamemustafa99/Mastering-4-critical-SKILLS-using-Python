@@ -1,4 +1,5 @@
 #################################  6- Selection  ################################### 
+#19.
 
 Number = str(input("Enter a number: "))
 
@@ -16,6 +17,8 @@ else:
     print("4+ digits") 
 print(Number)    
 # ===================================================================  
+#20.
+
 Num1 = float(input("Enter the 1st number: "))
 operator = input("Enter the operator: ")
 Num2 = float(input("Enter the 2st number: "))
@@ -32,6 +35,8 @@ elif operator == '/' and Num2 != 0:
 else :
     print("N/A")
 # ===================================================================  
+#21.
+
 Num1, Num2 = map(float,input("Enter 2 numbers: ").split())
 
 if Num1 > Num2:
@@ -39,6 +44,8 @@ if Num1 > Num2:
 else:
     print(f"{Num1} is the smaller")    
 # ===================================================================  
+#22.
+
 Num1, Num2, Num3 = map(float,input("Enter 3 numbers: ").split())
 
 if Num1 < Num2 and Num1 < Num3 :
@@ -58,6 +65,8 @@ if ans > Num3:
     ans = Num3
 print (ans)        
 # ===================================================================  
+#23.
+
 Number = int(input("Enter a number: "))
 
 if Number % 2 == 0:
@@ -70,6 +79,8 @@ else:
     else:
         print(f"The nagativ of this number is -{Number}")    
 # ===================================================================  
+#24.
+        
 Number = int(input("Enter a number: "))
 
 if Number < 10000:
@@ -90,6 +101,8 @@ else:
         else:
             print("This is a bad number")    
 # ===================================================================  
+#25.
+
 Number1, Number2 = map(int,input("Enter a number: ").split())
 
 if Number1 % 2 == 1 and Number2 % 2 == 1:
@@ -100,7 +113,9 @@ elif Number1 % 2 == 1 and Number2 % 2 == 0:
     print(Number1 + Number2)    
 else:
     print(Number1 - Number2)    
-# ===================================================================  
+# ===================================================================
+#26.
+
 Number1, Number2, Number3 = map(int,input("Enter unordered 3 numbers: ").split())
                     
 if Number1 > Number2:
@@ -111,7 +126,9 @@ if Number1 > Number2:
      Number1 , Number2 = Number2 , Number1
 
 print(Number1,Number2,Number3)
-# ===================================================================  
+# ===================================================================
+#27.
+
 Number1, Number2, Number3 = map(int,input("Enter unordered 3 numbers: ").split())
 
 The_biggest = -1
@@ -125,6 +142,8 @@ if Number3 < 100 and Number3 > The_biggest:
 
 print("The biggest number under 100 is: ",The_biggest)
 # ===================================================================  
+#28.
+
 X = float(input("Enter a number: "))
 
 Number1, Number2, Number3, Number4, Number5 = map(float,input("Enter 5 numbers: ").split())
@@ -159,7 +178,9 @@ elif Number5 < X:
 
 print(f"Values greater than the entered number are: {values_greaterthan_or_equal_X}")
 print(f"Values less than the entered number are: {values_lessthan_X}")
-# ===================================================================  
+# =================================================================== 
+#29.
+
 Number1, Number2, Number3, Number4, Number5, Number6, Number7, Number8, Number9, Number10 = map(float,input("Enter 10 numbers: ").split())
 
 The_biggest_value = Number1
@@ -185,6 +206,7 @@ if Number10 > The_biggest_value:
 
 print("This is the biggests value:", The_biggest_value)    
 ===================================================================  
+#30.
 
 N = int(input("Enter a number between 1 and 10: "))
 
@@ -393,6 +415,8 @@ else:
 
     print("The biggest value is:", largest_number)
 # ===================================================================  
+#31.
+
 N = int(input("Enter a number: "))
 
 s1, e1 = map(int, input("Enter the 1st interval: ").split())
@@ -445,6 +469,8 @@ if interval_count >= 5:
 print(f"This number: {N} has appeared {how_many} times in the intervals.")
 
 # ===================================================================  
+#32.
+
 s1, e1 = map(int, input("Enter the 1st interval: ").split())
 s2, e2 = map(int, input("Enter the 2nd interval: ").split())
 
