@@ -172,7 +172,7 @@ else:
 # جربها على صف من الأول، صف من النص، صف من الآخر
 
 
-### Another way 
+#################### 2nd way 
 
 rows = int(input("How many rows: "))
 
@@ -196,6 +196,33 @@ for row in range(rows):
 # أو لو إحنا على القطر التاني
 الصف الأوسط: بيتحط فيه نجمة واحدة، لأن القطرين بيتقاطعوا فيه، فالشرطين بيتحققوا في نفس المكان.
 
+
+#################### 3rd way
+
+rows = int(input("How many rows: "))
+
+for row in range(rows):
+    if row == rows // 2:#if we are in the middle row, ONE * in the middle row 
+        print(" " * row + "*")
+    else:
+        mirror_index = row if row < rows // 2 else rows - 1 - row
+        spaces_before  = mirror_index
+        spaces_middle  = rows - 2 - 2 * mirror_index
+        print(" " * spaces_before + "*" + " " * spaces_middle + "*")
+        
+"لما تلاقي تماثل، استغله. متحسبش نفس الحاجة مرتين."
+دي فكرة أساسية في البرمجة اسمها Symmetry Exploitation أو Symmetry Reduction.
+الفكرة:
+*     *     ← الصف 1
+ *   *      ← الصف 2
+  * *       ← الصف 3
+   *        ← الصف 4 (النص)
+  * *       ← الصف 5 (زي الصف 3)
+ *   *      ← الصف 6 (زي الصف 2)
+*     *     ← الصف 7 (زي الصف 1)
+لو إحنا في النص الأول (فوق الصف الأوسط) → effective = row
+لو إحنا في النص التاني (تحت الصف الأوسط) → effective = rows - 1 - row
+النتيجة: effective بتاخد نفس القيمة للصفوف المتماثلة.
 #=============================================================================================
 #55.
 
