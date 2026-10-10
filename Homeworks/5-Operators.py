@@ -1,5 +1,5 @@
 #################################  #05 Operators  ################################### 
-
+#10.
 
 nb = int(input("Enter the number of Boys: "))
 ng = int(input("Enter the number of Girls: "))
@@ -14,6 +14,7 @@ print(bool(nb == ng+10))
 print(bool(nb-ng > 10 or nt > 5))
 print(bool(nb == ng+10 or ng == nb+15))
 ===================================================================
+#11.
 
 Number1 = float(input("Enter the 1st number: "))
 Number2 = float(input("Enter the 2st number: "))
@@ -36,6 +37,7 @@ print("The average of the 5 numbers is: ", Numbers_Avg )
 print("The sum of the first 3 numbers // The sum of the last 2 numbers is : ", B)
 print("The average of the first 3 numbers // The average of the last 2 numbers is: ", C)
 ===================================================================
+#12.
 
 Num1 = float(input("Enter the 1st number: "))
 Num2 = float(input("Enter the 2st number: "))
@@ -45,6 +47,7 @@ fraction = result - int(result)
 
 print(f"The fraction is: {fraction}")
 ===================================================================
+#13.
 
 import math
 
@@ -55,6 +58,7 @@ remainder = Num1 - Num2 * math.floor(Num1 / Num2)
                          #ممكن كمان استخدم remainder= Num1-(Num1 // Num2) * Num2
 print("The Remainder: ", remainder)
 ===================================================================
+#14.
 
 Number = int(input("Enter a number: "))
 
@@ -64,6 +68,7 @@ is_even3 = (Number % 10) % 2  == 0    #استخدام اخر رقم (الاحا�
 
 print(f"is_even1 = {is_even1}\nis_even2 = {is_even2}\nis_even3 = {is_even3}")
 ===================================================================
+#15.
 
 Number = int(input("Enter a number: "))
 
@@ -78,6 +83,7 @@ sum_last_3 = d1 + d2 + d3
 print("Last 3 digits:", last_3_digits)
 print("Sum of last 3 digits:", sum_last_3)
 ===================================================================
+#16.
 
 Number = int(input("Enter a number: "))
 
@@ -86,6 +92,7 @@ last_digit = result % 10    #get the 4th digit
 
 print (last_digit)
 ===================================================================
+#17.
 
 Number = int(input("Enter a number: "))
 
@@ -96,6 +103,7 @@ result = even_number * 100 + odd_number * 7
 
 print(result)
 ===================================================================
+#18.
 
 Number = int(input("Enter a number: "))
 
