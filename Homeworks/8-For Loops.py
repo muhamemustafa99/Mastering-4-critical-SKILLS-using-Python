@@ -108,8 +108,8 @@ print(counter)
 rows = int(input("How many rows: "))
 
 while rows % 2 == 0:
-    rows = int(input("How many rows: "))
     print("Enter Odd number")
+    rows = int(input("How many rows: "))
     continue
 else:
     for row in range(rows):
@@ -134,7 +134,6 @@ else:
         # 3. Spaces between the stars.
         # 4. The second star.
             print(" " * spaces_before + "*" + " " * spaces_middle + "*")
-            
 # إزاي تفكر في مسائل من النوع ده؟
 # الخطوة 1: ارسم الشكل النهائي على ورقة
 # اكتب الـ output اللي إنت عايزه بالظبط. ده هيساعدك تشوف النمط.
@@ -165,6 +164,31 @@ else:
 
 # الخطوة 7: اختبر المعادلة يدوياً
 # جربها على صف من الأول، صف من النص، صف من الآخر
+
+
+### Another way 
+
+rows = int(input("How many rows: "))
+
+while rows % 2 == 0:
+    print("Enter Odd number")
+    rows = int(input("How many rows: "))
+
+for row in range(rows):
+    for col in range(rows):
+        if row == col or rows - row - 1 == col:
+            print("*", end='')
+        else:
+            print(" ", end='')
+    print()
+    
+في شبكة (grid) حجمها n × n:
+# القطر الرئيسي (من فوق شمال لتحت يمين): row == col
+# القطر التاني (من فوق يمين لتحت شمال): row + col == n - 1 أو rows - row - 1 == col
+النجمة بتتحط في مكانين:
+# لو إحنا على القطر الرئيسي
+# أو لو إحنا على القطر التاني
+الصف الأوسط: بيتحط فيه نجمة واحدة، لأن القطرين بيتقاطعوا فيه، فالشرطين بيتحققوا في نفس المكان.
 
 #=============================================================================================
 #55.
