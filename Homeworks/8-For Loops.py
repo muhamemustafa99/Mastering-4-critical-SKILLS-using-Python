@@ -240,7 +240,7 @@ print(counter)
 #=============================================================================================
 #56.
 
-#Find all quadruples (O(n4))
+#Find all quadruples O(n4)
 
 first_range, sec_range, third_range, fourth_range = map(int, input("Enter 4 numbers: ").split())
 counter = 0
@@ -250,31 +250,21 @@ for fnumber in range(1, first_range + 1):
         for thnumber in range(1, third_range + 1):
             for founumber in range(1, fourth_range + 1):
 
-
                 if fnumber + snumber == thnumber + founumber:
                     counter += 1
 print(counter)
 
-#Find all quadruples (O(n3))
+#Find all quadruples O(n3)
+first_range, sec_range, third_range,fourth_range = map(int, input("Enter 4 numbers: ").split())
+counter = 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for fnumber in range(1, first_range + 1):
+    for snumber in range(1, sec_range + 1):
+        for thnumber in range(1, third_range + 1):
+            founumber = (fnumber+snumber)-thnumber
+            if 1 <= founumber <= fourth_range: 
+                counter += 1
+print(counter)
 #=============================================================================================
 
 
