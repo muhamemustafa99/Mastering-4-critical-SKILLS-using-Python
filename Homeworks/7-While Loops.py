@@ -1,5 +1,5 @@
 ##################################  7-While Loops  ################################### 
-#32.
+#33.
 
 x = 1 
 sum = 0
@@ -9,6 +9,7 @@ while x <= 5:
       x += 1
 print("The sum of the first 5 numbers is:", sum)
 ==========================================================================================================================
+#34.
 
 end = int(input("Enter an number: "))
 start = 1
@@ -18,6 +19,7 @@ while start <= end:
         print(start)
     start += 1
 ==========================================================================================================================
+#35.
 
 Base = int(input("Enter a number: "))
 Exponent = int(input("Enter a power: "))
@@ -50,6 +52,7 @@ print(result)
 
 assert python_result == result, "False"
 ==========================================================================================================================
+#36.
 
 number = int(input("Enter a number: "))
 original = number  
@@ -65,6 +68,7 @@ else:
             number //= 10
 print(f"Number of digits for this number: {original} is --> {digits}")
 ==========================================================================================================================
+#37.
 
 number_of_cases = int(input("How many cases: "))
 
@@ -86,6 +90,7 @@ else:
         number_of_cases -= 1    
         print(f"The sum from 1 to {original} = {total}")
 ==========================================================================================================================
+#38.
 
 number_of_rows = int(input("How many rows: "))
 
@@ -103,6 +108,7 @@ else:
         print()
         row += 1
 ==========================================================================================================================
+#39.
 
 start, end = map(int, input("Which number would you like to start and end on?: ").split())
 
@@ -110,6 +116,7 @@ while start <= end:
     print(start)
     start += 1
 ==========================================================================================================================
+#40.
 
 number = int(input("Enter a number: "))
 word = str(input("Enter a word: "))
@@ -118,6 +125,7 @@ while number:
     print(word, end='')
     number -= 1
 ==========================================================================================================================
+#41.
 
 number_of_rows = int(input("How many rows: "))
 
@@ -135,6 +143,8 @@ else:
         print()
         row += 1
 ==========================================================================================================================
+#42.
+
 number_count = int(input("How many numbers do you want to enter? "))
 
 even_sum, even_count = 0, 0
@@ -157,6 +167,7 @@ while loop <= number_count:
 print(f"The sum of even nums is: {even_sum} \nThe sum of odd nums is {odd_sum}")
 print(f"The avg of even nums is: {even_sum / even_count} \nThe avg of odd nums is {odd_sum / odd_count}")
 ==========================================================================================================================
+#43.
 
 #### HomeWork_2
 
@@ -253,6 +264,7 @@ while True:
     else:
          break
 ==========================================================================================================================
+#44.
 
 # HomeWork_3
 
@@ -363,6 +375,8 @@ while row > 0:
     row -= 1
 
 ==========================================================================================================================
+#45.
+
 # HomeWork_3
 
 N_given = int(input("Enter a number:"))
@@ -371,34 +385,26 @@ if N_given < 0:
     print("Enter a valid number")
 
 else:
-
     start = 0
-
     while start <= N_given:
-
         if start % 8 == 0:
             print(start)
-
         elif start % 12 == 0:
             print(start)
-
-
-
         start += 1
 
 ## MS WCR
 
 result = 0
 n = int(input())
-
 cnt = 0
-
 while cnt <= n:
     if cnt % 8 == 0 or cnt % 3 == 0 and cnt % 4 == 0:
         print(cnt, end=' ')
-
     cnt += 1
 ==========================================================================================================================
+#46.
+
 # HomeWork_4
 
 T_Cases = int(input("Enter a number of T_Cases: "))
@@ -478,6 +484,8 @@ while total_test_cases > 0:
     total_test_cases -= 1
 
 ==================================================================================================================
+#47.
+
 # 88 HomeWork_1
 
 # Read how many words 
@@ -503,6 +511,7 @@ else:
                     
         total_words -= 1
 ==================================================================================================================
+#48.
 
 # 88 HomeWork_2
 
@@ -513,7 +522,6 @@ reverse = 0
 while number % 10 > 0:     # waht if 120 ? 120%10 = 0 ----> so false !
 
     reverse = (reverse * 10) + (number % 10)     
-
     number //= 10    # Remove the last digit from the current number
 
 print ("The reverse number of ",original," is ",reverse," and * 3 = ",reverse * 3)
@@ -549,6 +557,8 @@ print("Reversed × 3    :", reversed_number * 3)
 
 # 3. What am I building?      reversed_number = (reversed_number * 10) + last_digit
 ==================================================================================================================
+#49.
+
 # 88 HomeWork_3
 
 first_num = int(input("Enter the 1st num: "))
@@ -592,6 +602,8 @@ while current_row <= number_of_rows:
     current_row += 1
 
 ==================================================================================================================
+#50.
+
 # 88 HomeWork_4 (Special_Sum)
 
 t_cases = int(input("How many test cases: "))
