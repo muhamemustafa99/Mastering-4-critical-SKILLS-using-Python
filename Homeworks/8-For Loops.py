@@ -1,3 +1,5 @@
+#51.
+
 #test case input and calculation logic
 
 test_cases = int(input("How many test cases: "))
@@ -14,6 +16,8 @@ for case in range(test_cases):
         total_sum += result             
     print("Sum is: ", total_sum,"\n")        
 #=============================================================================================
+#52.
+
 first_range, sec_range, added = map(int, input("Enter 3 numbers: ").split())
 counter = 0
 
@@ -59,6 +63,8 @@ else:
 print(counter)
 
 #=============================================================================================
+#53.
+
 #Triple of Numbers  (O(n³))
 first_range, sec_range, third_range = map(int, input("Enter 3 numbers: ").split())
 counter = 0
@@ -95,9 +101,9 @@ for fnumber in range(1, first_range + 1):
             
 print(counter)
 #=============================================================================================
+#54.
 
 # Printing ********
-
 
 rows = int(input("How many rows: "))
 
@@ -161,6 +167,7 @@ else:
 # جربها على صف من الأول، صف من النص، صف من الآخر
 
 #=============================================================================================
+#55.
 
 # Find special pairs 
 first_range, sec_range= map(int, input("Enter 2 numbers: ").split())
@@ -174,6 +181,7 @@ for fnumber in range(50, first_range + 1):
                 counter += 1
 print(counter)
 #=============================================================================================
+#56.
 
 #Find all quadruples (O(n4))
 
