@@ -266,5 +266,28 @@ for fnumber in range(1, first_range + 1):
                 counter += 1
 print(counter)
 #=============================================================================================
+#57
 
+# IS Prime ?
+import math
+
+Number = int(input("Enter a number: "))
+
+if Number < 2:
+    print("It's not a prime")
+elif Number % 2 == 0 and Number > 2:
+    print("It's not a prime")
+else:
+    sqrt_Number = int(math.sqrt(Number))
+    is_prime = True
+
+    for num in range(2, sqrt_Number + 1):
+        if Number % num == 0:
+            is_prime =False
+            break
+
+    if is_prime:
+        print("It's Prime")
+    else:
+        print("It's not Prime")
 
