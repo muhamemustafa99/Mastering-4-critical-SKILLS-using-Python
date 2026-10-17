@@ -281,7 +281,7 @@ else:
     sqrt_Number = int(math.sqrt(Number))
     is_prime = True
 
-    for num in range(2, sqrt_Number + 1):
+    for num in range(3, sqrt_Number + 1, 2):
         if Number % num == 0:
             is_prime =False
             break
