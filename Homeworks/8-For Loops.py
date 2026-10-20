@@ -290,4 +290,30 @@ else:
         print("It's Prime")
     else:
         print("It's not Prime")
+#=============================================================================================
+#58
+# Range IS Prime ?
+
+import math
+
+number = int(input("Enter a number: "))
+
+for every_number in range(2, number + 1):
+
+    if every_number % 2 == 0 and every_number > 2:
+        continue
+
+    sqrt_every_number = int(math.sqrt(every_number))
+    is_prime = True
+
+    # Check odd divisors only
+    for num in range(3, sqrt_every_number + 1, 2):
+        if every_number % num == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(every_number)
+#=============================================================================================
+
 
