@@ -322,6 +322,7 @@ for every_number in range(2, number + 1):
 the_range = int(input("Enter a range from 1 to: "))
 start_range = int(input("The range starts from: "))
 end_range = int(input("The range ends to: "))
+total = 0    
 
 if the_range < 1:
     print("Should be bigger than 1")
@@ -334,8 +335,12 @@ else:
         while num > 0:
             digit_sum += num%10
             num //= 10
+    
         if start_range <= digit_sum <= end_range:
             print(copy_num)
+            total += copy_num
+print("And the sum of these numbers is ",total)
+
 #=============================================================================================
 
 
