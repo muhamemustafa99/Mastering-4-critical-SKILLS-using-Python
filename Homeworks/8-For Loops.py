@@ -315,5 +315,29 @@ for every_number in range(2, number + 1):
     if is_prime:
         print(every_number)
 #=============================================================================================
+#59
+
+# Digita Sum in Range
+
+the_range = int(input("Enter a range from 1 to: "))
+start_range = int(input("The range starts from: "))
+end_range = int(input("The range ends to: "))
+
+if the_range < 1:
+    print("Should be bigger than 1")
+    
+else:
+    for num in range(1, the_range+1):
+        digit_sum = 0
+        copy_num = num
+
+        while num > 0:
+            digit_sum += num%10
+            num //= 10
+        if start_range <= digit_sum <= end_range:
+            print(copy_num)
+#=============================================================================================
+
+
 
 
